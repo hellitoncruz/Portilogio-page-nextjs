@@ -8,8 +8,6 @@ import './styles.scss'
 export default function Page() {
 
   const [toggle, setToggle] = useState(1)
-  const [visible, setVisible] = useState(false)
-  const [changeBg, setChangeBg] = useState(false)
   
   const menuRef = useRef<HTMLUListElement>(null) 
 
@@ -22,17 +20,23 @@ export default function Page() {
     menuRef?.current?.classList.toggle("menu-mobile")
   }
 
+  function closeMenu() {
+    if (menuRef?.current?.classList.contains("menu-mobile")) {
+      menuRef.current.classList.remove("menu-mobile")
+    }
+  }
+
   return (
     <div className='page-container'>
       <div className='home-container' id='home'>
-        <div className='menu-container' style={{background: changeBg ? '#00D2DF' : '#121212'}}>
+        <div className='menu-container'>
           <p>Portfólio</p>
           <ul ref={menuRef}>
           <button className='close-menu-button' onClick={openMenu}></button>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about-me">Sobre mim</a></li>
-            <li><a href="#experience">Experiência</a></li>
-            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#home" onClick={closeMenu}>Home</a></li>
+            <li><a href="#about-me" onClick={closeMenu}>Sobre mim</a></li>
+            <li><a href="#experience" onClick={closeMenu}>Experiência</a></li>
+            <li><a href="#projects" onClick={closeMenu}>Projetos</a></li>
           </ul>
           <button className='open-menu-button' onClick={openMenu}></button>
         </div>
@@ -175,6 +179,7 @@ export default function Page() {
           </div>
         </div>
       </div>
+      <a href="/" id="toTop">&#11161;</a>
       <footer>
         <div className='footer-content'><p>@ 2024 - Helliton Cruz</p></div>
       </footer>

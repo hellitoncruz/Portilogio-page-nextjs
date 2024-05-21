@@ -36,6 +36,10 @@ body {
       font-size: 18px;
       line-height: 22px;
 
+      @media (max-width: 1024px) {
+        background-color: #121212;
+      }
+
       p {
         color: #00D2DF;
         margin: 0;
@@ -57,8 +61,6 @@ body {
 
       @media (max-width: 1024px) {
         padding: 24px 0;
-
-        position: fixed;
         width: 100%;
 
         .open-menu-button {
@@ -147,7 +149,7 @@ body {
       margin: 160px auto;
 
       @media (max-width: 1024px) {
-        padding: 102px 16px 56px;
+        padding: 56px 16px 56px;
         margin: 0;
       }
 
@@ -271,7 +273,7 @@ body {
     .texts-about {
 
       @media (max-width: 1024px) {
-        margin: 56px 0;
+        padding: 40px 0;
 
       }
 
@@ -382,13 +384,14 @@ body {
 
     @media (max-width: 1024px) {
       min-height: unset;
-      padding: 0 16px;
+      padding: 40px 16px;
+      
     }
 
     .xp-content {
       max-width: 1080px;
       margin: 0 auto;
-
+  
       h3 {
         font-size: 24px;
         line-height: 29px;
@@ -443,7 +446,7 @@ body {
           }
 
           .tab-item-active {
-            background: #151515;
+            background: #1e1e1e;
             border-left: 2px solid #00D2DF;
           }
         }
@@ -461,6 +464,7 @@ body {
               font-size: 16px;
               line-height: 19px;
               font-weight: 500;
+              flex-direction: column;
             }
 
             span {
@@ -508,12 +512,17 @@ body {
     @media (max-width: 1024px) {
       min-height: unset;
       padding: 0 16px;
+      margin: 40px 0;
     }
 
     h3 {
       font-size: 24px;
       line-height: 29px;
       margin: 0 0 64px 0;
+
+      @media (max-width: 1024px) {
+        margin: 0 0 40px 0;
+      }
     }
 
     .project-contents {
@@ -526,6 +535,8 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 24px;
+        
       }
 
       .project-item {
@@ -537,6 +548,8 @@ body {
           align-items: center;
           display: flex;
           flex-direction: column;
+          margin-bottom: 0px;
+          border-bottom: 1px solid #8080801a;
         }
 
         .project-img {
@@ -553,6 +566,10 @@ body {
           font-size: 24px;
           line-height: 29px;
           font-weight: 500;
+
+          @media (max-width: 1024px) {
+            margin: 18px 0 8px;
+          }
         }
 
 
@@ -565,6 +582,9 @@ body {
 
         .project-tecs-container {
           position: relative;
+          @media (max-width: 1024px) {
+            display: none;
+          }
         }
 
         .project-tecs {
@@ -636,29 +656,24 @@ body {
   }
 
   #toTop {
-    background: transparent;
-    border: 0.1px solid #9358F7;
-    padding: 8px;
-    position: fixed;
-    bottom: 50px;
-    right: 45px;
-    opacity: 0.7;
-    scroll-behavior: smooth;
-    cursor: pointer;
-    width: 45px;
-    height: 45px;
-    font-size: 27px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #9358F7;
-
+    display: none;
     @media (max-width: 1024px) {
+      text-decoration: none;
+      background: #fff;
+      padding: 6px;
+      position: fixed;
+      opacity: 1;
+      scroll-behavior: smooth;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #121212;
       bottom: 25px;
-      right: 20px;
+      right: 0;
       width: 36px;
-      height: 36px;
-      font-size: 22px;
+      height: 24px;
+      font-size: 44px;
     }
   }
 
@@ -677,7 +692,7 @@ body {
       padding: 24px;
 
       p {
-        color: #00D2DF;
+        color: #fff;
         animation: changeColor 3s infinite;
         font-size: 20px;
         line-height: 24px;
@@ -686,19 +701,11 @@ body {
       }
 
       @keyframes changeColor {
-        25% {
-          color: #00D2DF;
+        50% {
+          color: #00e1ec;
         }
 
-        25% {
-          color: #10D7E2;
-        }
-
-        25% {
-          color: #9358F7;
-        }
-
-        25% {
+        50% {
           color: #6518B4;
         }
 
