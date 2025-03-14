@@ -48,7 +48,7 @@ export default function Page() {
           </div>
           <div className='social-links'>
             <a href="https://www.linkedin.com/in/helliton-cruz-926a56203/" target="about_blank">LinkedIn</a>
-            <a href="https://github.com/Helliton-Xavier" target="about_blank" >GitHub</a>
+            <a href="https://github.com/hellitoncruz" target="about_blank" >GitHub</a>
           </div>
         </div>
       </div>
@@ -105,10 +105,10 @@ export default function Page() {
           <div className='project-item'>
             <Image width={800}
       height={500} className= "project-img" src='/assets/project1.png' alt="" />
-            <h4 className='project-name'>Help Dog</h4>
+            <h4 className='project-name'>Dog Rescue</h4>
             <p className='project-description'>Projeto social que tem o objetivo de ajudar cães de rua, em situação vulnerável.</p>
             
-            <a href="/project-link" className='project-link'>Visualizar</a>
+            <a href="https://dog-rescue-three.vercel.app/" className='project-link'>Visualizar</a>
           </div>
 
           <div className='project-item'>
@@ -117,7 +117,7 @@ export default function Page() {
             <h4 className='project-name'>Professional Site</h4>
             <p className='project-description'>Projeto de site profissional criado para psicóloga divulgar seus trabalhos.</p>
             
-            <a href="/project-link" className='project-link'>Visualizar</a>
+            <a href="https://tamires-aguiar.netlify.app/" className='project-link'>Visualizar</a>
           </div>
 
           <div className='project-item'>
@@ -125,7 +125,7 @@ export default function Page() {
       height={500} className= "project-img" src='/assets/project3.jpg' alt="" />
             <h4 className='project-name'>Vaso e Cor</h4>
             <p className='project-description'>Projeto de e-commerce que atuei na criação de melhorias e ajustes de layout.</p>
-            <a href="/project-link" className='project-link'>Visualizar</a>
+            <a href="https://www.vasoecor.com.br/" className='project-link'>Visualizar</a>
           </div>
 
           <div className='project-item'>
@@ -134,7 +134,7 @@ export default function Page() {
             <h4 className='project-name'>Agua Azul</h4>
             <p className='project-description'>Projeto de e-commerce que atuei na criação fazendo a alteração de layout de toda a loja e implementando novas melhorias.</p>
             
-            <a href="/project-link" className='project-link'>Visualizar</a>
+            <a href="https://www.useaguaazul.com.br/" className='project-link'>Visualizar</a>
           </div>
         </div>
       </div>
