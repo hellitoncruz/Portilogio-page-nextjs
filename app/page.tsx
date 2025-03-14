@@ -104,78 +104,37 @@ export default function Page() {
         <div className='project-contents'>
           <div className='project-item'>
             <Image width={800}
-      height={500} className= "project-img" src='/assets/project1.svg' alt="" />
+      height={500} className= "project-img" src='/assets/project1.png' alt="" />
             <h4 className='project-name'>Help Dog</h4>
             <p className='project-description'>Projeto social que tem o objetivo de ajudar cães de rua, em situação vulnerável.</p>
-            <div className='project-tecs-container'>
-              <p className='project-tecs'>Tecnologias usadas no projeto</p>
-              <ul className='tecs-list' >
-                <li className='tec-name'><Image width={800}
-      height={500} className='logo-tec' src='/assets/react-logo.svg' alt="" />ReactJS</li>
-                <li className='tec-name'><Image width={800}
-      height={500} className='logo-tec' src='/assets/typescript-def.svg' alt="" />TypeScript</li>
-                <li className='tec-name'><Image width={800}
-      height={500} className='logo-tec' src='/assets/vitejs.svg' alt="" />ViteJS</li>
-              </ul>
-            </div>
-            {/* <a href="/project-link" className='project-link'>Visualizar</a> */}
+            
+            <a href="/project-link" className='project-link'>Visualizar</a>
           </div>
 
           <div className='project-item'>
             <Image width={800}
-      height={500} className= "project-img" src='/assets/project2.svg' alt="" />
-            <h4 className='project-name'>NBA infos</h4>
-            <p className='project-description'>Projeto para ter as informações em tempo real do campeonato da NBA.</p>
-            <div className='project-tecs-container'>
-              <p className='project-tecs'>Tecnologias usadas no projeto</p>
-              <ul className='tecs-list'>
-              <li className='tec-name'><Image width={800}
-      height={500} className='logo-tec' src='/assets/react-logo.svg' alt="" />ReactJS</li>
-                <li className='tec-name'><Image width={800}
-      height={500} className='logo-tec' src='/assets/typescript-def.svg' alt="" />TypeScript</li>
-                <li className='tec-name'><Image width={800}
-      height={500} className='logo-tec' src='/assets/vitejs.svg' alt="" />ViteJS</li>
-              </ul>
-            </div>
-            {/* <a href="/project-link" className='project-link'>Visualizar</a> */}
+      height={500} className= "project-img" src='/assets/project2.png' alt="" />
+            <h4 className='project-name'>Professional Site</h4>
+            <p className='project-description'>Projeto de site profissional criado para psicóloga divulgar seus trabalhos.</p>
+            
+            <a href="/project-link" className='project-link'>Visualizar</a>
           </div>
 
           <div className='project-item'>
             <Image width={800}
-      height={500} className= "project-img" src='/assets/project3.svg' alt="" />
-            <h4 className='project-name'>La pizza</h4>
-            <p className='project-description'>Site para aqueles que amam pizza, você pode pedir a que desejar.</p>
-            <div className='project-tecs-container'>
-              <p className='project-tecs'>Tecnologias usadas no projeto</p>
-              <ul className='tecs-list'>
-                <li className='tec-name'><Image width={800}
-      height={500} className='logo-tec' src='/assets/react-logo.svg' alt="" />ReactJS</li>
-                <li className='tec-name'><Image width={800}
-      height={500} className='logo-tec' src='/assets/typescript-def.svg' alt="" />TypeScript</li>
-                <li className='tec-name'><Image width={800}
-      height={500} className='logo-tec' src='/assets/vitejs.svg' alt="" />ViteJS</li>
-              </ul>
-            </div>
-            {/* <a href="/project-link" className='project-link'>Visualizar</a> */}
+      height={500} className= "project-img" src='/assets/project3.jpg' alt="" />
+            <h4 className='project-name'>Vaso e Cor</h4>
+            <p className='project-description'>Projeto de e-commerce que atuei na criação de melhorias e ajustes de layout.</p>
+            <a href="/project-link" className='project-link'>Visualizar</a>
           </div>
 
           <div className='project-item'>
             <Image width={800}
-      height={500} className= "project-img" src='/assets/project4.svg' alt="" />
-            <h4 className='project-name'>Portal Escolar</h4>
-            <p className='project-description'>Plataforma escolar para conseguir ter informações da situação do aluno/professor.</p>
-            <div className='project-tecs-container'>
-              <p className='project-tecs'>Tecnologias usadas no projeto</p>
-              <ul className='tecs-list'>
-                <li className='tec-name'><Image width={800}
-      height={500} className='logo-tec' src='/assets/img-dev.png' alt="" /> ReactJS</li>
-                <li className='tec-name'><Image width={800}
-      height={500} className='logo-tec' src='/assets/img-dev.png' alt="" />TypeScript</li>
-                <li className='tec-name'><Image width={800}
-      height={500} className='logo-tec' src='/assets/img-dev.png' alt="" />ViteJS</li>
-              </ul>
-            </div>
-            {/* <a href="/project-link" className='project-link'>Visualizar</a> */}
+      height={500} className= "project-img" src='/assets/project4.png' alt="" />
+            <h4 className='project-name'>Agua Azul</h4>
+            <p className='project-description'>Projeto de e-commerce que atuei na criação fazendo a alteração de layout de toda a loja e implementando novas melhorias.</p>
+            
+            <a href="/project-link" className='project-link'>Visualizar</a>
           </div>
         </div>
       </div>
